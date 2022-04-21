@@ -1,0 +1,28 @@
+body {
+    font-size: 18px;
+    font-family: $font-bai;
+}
+
+:where(header, main, footer) {
+    a {
+        color: $blue-dark;
+        text-decoration: none;
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    h1, h2, h3 {
+        color: $blue-dark;
+    }
+
+    p {
+        color: $grayish-blue;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}

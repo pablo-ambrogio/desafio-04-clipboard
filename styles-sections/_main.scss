@@ -1,0 +1,126 @@
+.container-main {
+    @include w-h(50%, auto);
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+
+    &-components {
+        @include w-h(100%, auto);
+        @include d-grid-2 (55%, 45%, auto);
+        column-gap: 2rem;
+        position: relative;
+        padding-top: 4rem;
+    }
+
+    &--mt {
+        margin: 10rem auto 5rem;
+    }
+
+    &--card {
+        width: 70%;
+    }
+}
+
+.figure {
+
+    &__image {
+        @include w-h(100%, auto);
+        position: relative;
+        top: 0;
+        left: -5%;
+
+        &--mt {
+            margin-top: 3rem;
+        }
+    }
+
+}
+
+.description {
+    @include w-h(70%, auto);
+
+    &-links {
+        @include d-flex (column, flex-start, flex-start);
+        row-gap: 1rem;
+    }
+
+    &__link-title {
+        margin-bottom: 0;
+        font-size: 1.3rem;
+    }
+}
+
+.supercharge-workflow {
+    @include w-h(100%, auto);
+    @include d-flex(row, space-around, center);
+    padding-top: 3rem;
+    // background-color: cadetblue;
+}
+
+.workflow {
+    @include w-h (100%, 15rem);
+    @include d-flex(column, flex-start, center);
+
+    
+    &__img {
+        @include w-h(auto, 30px);
+        margin-bottom: 1rem;
+    }
+}
+
+.brands {
+    @include w-h (80%, auto);
+    margin: 5rem auto 10rem;
+    @include d-flex (row, center, center);
+    column-gap: 5rem;
+
+    &__img {
+        @include w-h(auto, 35px);
+    }
+}
+
+/* -----
+
+footer
+
+----- */
+
+.footer-container {
+    @include w-h(100%, 10rem);
+    margin-top: 10rem;
+    @include d-grid-2 (70%, 30%, auto);
+    background-color: rgba($grayish-blue, .2);
+    place-items: center start;
+
+    &--grid {
+        @include w-h(90%, auto);
+        margin: auto;
+        @include d-grid-repeart(4, 1fr, auto);
+        place-items: center;
+    }
+}
+
+.footer-links-text {
+    place-self: start;
+}
+
+.footer__link-text {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.logo {
+    @include w-h(auto, 3rem);
+}
+
+.social {
+    @include w-h(100%, auto);
+    display: inline-flex;
+    column-gap: 1.5rem;
+    place-content: center center;
+
+    &__icon {
+        @include w-h(auto, 25px);
+        fill: $blue-dark;
+    }
+}
