@@ -107,6 +107,10 @@ footer
 .footer__link-text {
     font-size: 1rem;
     line-height: 2;
+
+    &:hover {
+        color: $cyan;
+    }
 }
 
 .logo {
@@ -122,5 +126,14 @@ footer
     &__icon {
         @include w-h(auto, 25px);
         fill: $blue-dark;
+
+        &:hover {
+            fill: $cyan;
+        }
+    }
+
+    &__anchor {
+        display: inline-block;
+        width: max-content;
     }
 }

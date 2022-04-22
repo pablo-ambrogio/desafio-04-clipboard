@@ -45,9 +45,24 @@
         font-weight: 600;
         letter-spacing: .5px;
 
+        box-shadow: -1px 3px #279483;
+
+        &:hover {
+            background-color: rgba($cyan, .8);
+            box-shadow: -1px 3px $cyan;
+        }
+
         
     &:nth-child(2) {
         background-color: $blue-light;
+
+        box-shadow: -1px 3px #4859d9;
+
+        &:hover {
+            background-color: rgba($blue-light, .8);
+            box-shadow: -1px 3px $blue-light;
+        }
+
     }
     }
 }

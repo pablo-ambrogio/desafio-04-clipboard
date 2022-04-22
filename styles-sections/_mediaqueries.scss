@@ -1,0 +1,137 @@
+@media screen and (max-width: 575px) {
+    .header-bg {
+        height: auto;
+        padding-top: 5rem;
+        background: url(../images/bg-header-mobile.png) no-repeat top center / contain;
+
+    }
+
+    .container-header {
+        width: 85%;
+    }
+
+    .cta {
+        @include d-flex(column, center, center);
+        @include w-h (100%, auto);
+        column-gap: 0;
+        row-gap: 1.5rem;
+
+        &__button {
+            @include w-h (90%, auto);
+            padding: 1rem 0;
+        }
+    }
+
+    .logo {
+        @include w-h(125px, auto);
+        margin-bottom: 2rem;
+
+        &--footer {
+            width: 50px;
+        }
+    }
+
+/* -----
+
+    main
+
+    ----- */
+
+    .container-main {
+        width: 90%;
+
+        &-components {
+            @include d-grid-repeart(1, 1fr, auto);
+            column-gap: 0;
+            text-align: center;
+        }
+
+        &--mt {
+            margin: 5rem auto;
+        }
+    }
+
+    .description {
+        place-self: center;
+    }
+
+    .text__paragraph {
+        font-size: .9rem;
+    
+        .text__paragraph--description {
+            // font-size: .9rem;
+            margin-top: .9rem;
+        }
+    }
+    .figure {
+        text-align: center;
+        &__image {
+            width: 90%;
+            left: 0;
+            
+        }
+    }
+
+
+    .supercharge-workflow {
+        width: 85%;
+        margin: auto;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .workflow {
+        height: auto;
+    }
+
+    .brands {
+        width: max-content;
+        margin: 3rem auto 8rem;
+        flex-direction: column;
+        // @include d-flex (column, center, flex-start);
+        column-gap: 0;
+        row-gap: 3rem;
+
+        &__img {
+            height: 30px;
+        }
+    }
+
+
+/* -----
+
+    footer
+
+    ----- */
+
+    .footer-container {
+        height: auto;
+        margin-top: 8rem;
+        padding: 4rem 0;
+        @include d-grid-repeart(1, 1fr, auto);
+        place-items: center;
+
+        &--grid {
+            @include d-grid-repeart (1, 1fr, auto);
+            text-align: center;
+        }
+
+    }
+
+    .footer-links-text {
+        place-self: end center;
+    }
+
+    .footer-links {
+        margin: 0;
+    }
+
+    .footer__link-text {
+        display: inline-block;
+        margin: .5rem 0;
+    }
+
+    .social {
+        padding-top: 3rem;
+    }
+}
